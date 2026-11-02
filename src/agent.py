@@ -6,7 +6,6 @@ import time
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from numpy import rint
 
 from src.tools import (
     buscar_produto as consultar_produtos,
