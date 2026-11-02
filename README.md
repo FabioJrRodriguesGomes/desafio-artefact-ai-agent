@@ -15,6 +15,7 @@ Desenvolver um agente que consiga:
 - Responder dúvidas sobre pagamentos, frete, trocas, devoluções e garantias.
 - Respeitar o escopo de atendimento da empresa e evitar respostas sem fundamentação nos dados disponíveis.
 
+
 ## Tecnologias utilizadas
 
 - **Python:** linguagem principal do projeto.
@@ -38,6 +39,13 @@ O fluxo geral é:
 4. Os dados encontrados são retornados ao modelo.
 5. O Gemini utiliza o resultado para formular uma resposta em linguagem natural.
 
+## Exemplos de conversas
+
+Exemplos de interações e testes realizados durante o desenvolvimento
+estão disponíveis em [`examples/conversas.md`](examples/conversas.md).
+O documento apresenta cenários de atendimento, consultas comerciais
+e validação de acesso a pedidos.
+
 ### Ferramentas implementadas
 
 | Ferramenta | Responsabilidade |
@@ -60,7 +68,7 @@ A solução não utiliza banco vetorial nem embeddings. A recuperação do manua
 
 ## Estrutura do projeto
 
-```text
+
 desafio_artefact/
 │
 ├── data/
@@ -86,13 +94,17 @@ desafio_artefact/
 │   ├── test_politicas.py
 │   └── test_erros.py
 │
+├── examples/
+│   └── conversas.md
+│
 ├── .env
 ├── .gitignore
+├── README.md
 ├── requirements.txt
 ├── testar_carregamento.py
 ├── testar_gemini.py
 └── testar_tools.py
-```
+
 
 ## Requisitos
 
